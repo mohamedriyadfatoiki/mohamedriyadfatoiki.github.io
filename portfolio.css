@@ -417,29 +417,6 @@ footer{
 .fade-up{animation:fadeUp .7s ease both}
 .d1{animation-delay:.1s}.d2{animation-delay:.2s}.d3{animation-delay:.3s}.d4{animation-delay:.4s}.d5{animation-delay:.55s}
 
-/* ── RESPONSIVE ── */
-@media(max-width:900px){
-  .hero{grid-template-columns:1fr}
-  .hero-right{height:50vh}
-  .hero-left{padding:3rem 1.5rem}
-  .about-grid,.skills-grid,.sport-grid{grid-template-columns:1fr}
-  .stats-bar{grid-template-columns:repeat(2,1fr)}
-  .stat:nth-child(2){border-right:none}
-  .gallery{grid-template-columns:repeat(2,1fr)}
-  .gimg.tall{grid-row:span 1}
-  .lang-row{grid-template-columns:1fr 1fr;grid-template-rows:auto auto}
-  .lang-level{grid-column:1;grid-row:2;margin-top:-.5rem}
-  .lang-bar-wrap{grid-column:1/-1;grid-row:2}
-}
-
-@media(max-width:600px){
-  .hero-name{font-size:3.5rem}
-  .stats-bar{grid-template-columns:1fr 1fr}
-  .soft-cards{grid-template-columns:1fr}
-  .fitem{grid-template-columns:1fr;gap:0}
-  .fitem-num{display:none}
-  .fitem-date{width:fit-content;margin-bottom:.5rem}
-}
 
 /* ── ENGAGEMENT ── */
 .engage-grid{
@@ -554,7 +531,7 @@ footer{
   .cursor,.cursor-ring{display:none}
 }
 
-/* ── SKILL LEVEL LABELS (replace % bars with accessible labels) ── */
+/* ── SKILL LEVEL LABELS ── */
 .skill-pct{
   font-size:10px;
   letter-spacing:.08em;
@@ -563,4 +540,59 @@ footer{
   padding:2px 8px;
   border:1px solid var(--border);
   border-radius:2px;
+}
+
+
+/* ────────────────────────────────────────── */
+/* ──       RESPONSIVE MODIFIED 👇         ── */
+/* ────────────────────────────────────────── */
+
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .hero-right{height:45vh}
+  .hero-left{padding:3rem 2rem 4rem 2rem}
+  .hero-name{font-size:clamp(3.5rem, 9vw, 5.5rem)}
+  
+  .about-grid,.skills-grid,.sport-grid{grid-template-columns:1fr; gap:3rem}
+  .stats-bar{grid-template-columns:repeat(2,1fr)}
+  .stat:nth-child(2){border-right:none}
+  
+  .gallery{grid-template-columns:repeat(2,1fr)}
+  .gimg.tall{grid-row:span 1}
+  
+  /* Modif dyal l-langues bach l-bars may-trakboch */
+  .lang-row{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+    padding: 1.2rem 0;
+  }
+  .lang-bar-wrap{width: 100%; height: 4px}
+  .lang-level{margin-top: 0}
+}
+
+@media(max-width:600px){
+  .wrap{padding: 0 1.2rem}
+  .hero-name{font-size:3.2rem}
+  
+  /* Buttons full width f mobile */
+  .hero-cta{flex-direction: column; gap: 10px; width: 100%}
+  .btn-primary, .btn-outline{text-align: center; width: 100%}
+  
+  /* Stats stacked n9yin f direct phone view */
+  .stats-bar{grid-template-columns:1fr}
+  .stat{border-right:none; border-bottom:1px solid var(--border); padding:1.5rem}
+  .stat:last-child{border-bottom:none}
+  
+  .soft-cards{grid-template-columns:1fr}
+  
+  .fitem{grid-template-columns:1fr; gap:0.5rem; padding:1.2rem 1.5rem}
+  .fitem-num{display:none}
+  .fitem-date{width:fit-content; margin-top:.3rem}
+  
+  /* Gallery fix sghira */
+  .gallery{grid-template-columns:1fr}
+  .gimg.wide{grid-column:span 1}
+  .gimg .gimg-inner, .gimg.wide .gimg-inner{height:200px}
 }

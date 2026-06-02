@@ -2,136 +2,365 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MOHAMED RIYAD FATOIKI — Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
+<div class="cursor" id="cur"></div>
+<div class="cursor-ring" id="ring"></div>
 <section class="hero">
   <div class="hero-left">
-    <div class="hero-eyebrow">Marrakech · FSSM · KACM · LRMSF</div>
-    <h1 class="hero-name">MOHAMED RIYAD<br><span>FATOIKI</span></h1>
-    <p class="hero-desc">
+    <div class="hero-eyebrow fade-up d1">Marrakech · FSSM · KACM · LRMSF</div>
+    <h1 class="hero-name fade-up d2">MOHAMED RIYAD<br><span>FATOIKI</span></h1>
+    <p class="hero-desc fade-up d3">
       Étudiant en <strong>Informatique Appliquée</strong> — arbitre régional &amp;
       athlète au KACM depuis 4+ ans. La discipline du terrain,
       au service du <strong>code</strong>.
     </p>
-    <div class="hero-cta">
+    <div class="hero-cta fade-up d4">
       <a href="#contact" class="btn-primary">Me contacter</a>
       <a href="#projets" class="btn-outline">Voir Mes projets</a>
     </div>
   </div>
-  <div class="hero-right">
+  <div class="hero-right fade-up d5">
     <img class="hero-img" src="portrait.webp" alt="Portrait">
   </div>
   <div class="hero-line"></div>
 </section>
 <div class="stats-bar">
-  <div class="stat"><div class="stat-num">4+</div><div class="stat-label">Ans d'arbitrage</div></div>
-  <div class="stat"><div class="stat-num">IAP</div><div class="stat-label">FSSM · UCA</div></div>
-  <div class="stat"><div class="stat-num">KACM</div><div class="stat-label">Athlète actif</div></div>
-  <div class="stat"><div class="stat-num">3</div><div class="stat-label">Langues</div></div>
+  <div class="stat">
+    <div class="stat-num">4+</div>
+    <div class="stat-label">Ans d'arbitrage</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">IAP</div>
+    <div class="stat-label">FSSM · UCA</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">KACM</div>
+    <div class="stat-label">Athlète actif</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">3</div>
+    <div class="stat-label">Langues</div>
+  </div>
 </div>
 <section class="section" id="about">
   <div class="wrap">
-    <div class="sec-header"><div class="sec-num">01</div><div class="sec-title">À propos</div><div class="sec-line"></div></div>
+    <div class="sec-header">
+      <div class="sec-num">01</div>
+      <div class="sec-title">À propos</div>
+      <div class="sec-line"></div>
+    </div>
     <div class="about-grid">
       <div class="about-img-wrap">
         <img class="about-img" src="portrait.webp" alt="Portrait">
-        <div class="about-img-accent"></div><div class="about-img-accent2"></div>
+        <div class="about-img-accent"></div>
+        <div class="about-img-accent2"></div>
       </div>
       <div>
-        <p class="about-text">Étudiant en 1ère année <strong>Informatique Appliquée (IAP)</strong> à la Faculté des Sciences Semlalia de Marrakech. Mon parcours est marqué par une <strong>double vie</strong> — celle du développeur en devenir, et celle de l'athlète et de l'arbitre sur le terrain.</p>
-        <p class="about-text">Cette combinaison m'a forgé une <strong>mentalité de compétition</strong>, une capacité à <strong>décider vite sous pression</strong>, et une <strong>gestion du temps</strong> que peu d'étudiants peuvent revendiquer.</p>
-        <div class="tag-list"><span class="atag">Discipline</span><span class="atag">Décision rapide</span><span class="atag">Rigueur analytique</span><span class="atag">Gestion du stress</span><span class="atag">Leadership</span></div>
+        <p class="about-text">
+          Étudiant en 1ère année <strong>Informatique Appliquée (IAP)</strong> à la Faculté
+          des Sciences Semlalia de Marrakech. Mon parcours est marqué par une
+          <strong>double vie</strong> — celle du développeur en devenir, et celle
+          de l'athlète et de l'arbitre sur le terrain.
+        </p>
+        <p class="about-text">
+          Cette combinaison m'a forgé une <strong>mentalité de compétition</strong>,
+          une capacité à <strong>décider vite sous pression</strong>, et une
+          <strong>gestion du temps</strong> que peu d'étudiants peuvent revendiquer.
+        </p>
+        <div class="tag-list">
+          <span class="atag">Discipline</span>
+          <span class="atag">Décision rapide</span>
+          <span class="atag">Rigueur analytique</span>
+          <span class="atag">Gestion du stress</span>
+          <span class="atag">Leadership</span>
+        </div>
       </div>
     </div>
   </div>
 </section>
-<section class="section" id="formation">
+<section class="section" style="padding-top:0" id="formation">
   <div class="wrap">
-    <div class="sec-header"><div class="sec-num">02</div><div class="sec-title">Formation</div><div class="sec-line"></div></div>
+    <div class="sec-header">
+      <div class="sec-num">02</div>
+      <div class="sec-title">Formation</div>
+      <div class="sec-line"></div>
+    </div>
     <div class="formation-list">
-      <div class="fitem"><div class="fitem-num">01</div><div><div class="fitem-title">1ère année Informatique Appliquée (IAP)</div><div class="fitem-sub">Faculté des Sciences Semlalia · Université Cadi Ayyad, Marrakech</div><div class="fitem-tags"><span class="ftag">HTML</span><span class="ftag">CSS</span><span class="ftag">JAVASCRIPT</span><span class="ftag">Algorithmique</span><span class="ftag">C / Python</span><span class="ftag">Mathématiques</span><span class="ftag">Architecture</span></div></div><div class="fitem-date">2025 – Présent</div></div>
-      <div class="fitem"><div class="fitem-num">02</div><div><div class="fitem-title">Baccalauréat Sc.Physique</div><div class="fitem-sub">Lycée Qualifiant Prince Heritier My El Hassan, Marrakech</div></div><div class="fitem-date">2025</div></div>
-      <div class="fitem"><div class="fitem-num">03</div><div><div class="fitem-title">Diplome D'arbitrage</div><div class="fitem-sub">Ligue Regional Du Football Marrakech-Safi</div></div><div class="fitem-date">2022-2023</div></div>
-    </div>
-  </div>
-</section>
-<section class="section" id="sport">
-  <div class="wrap">
-    <div class="sec-header"><div class="sec-num">03</div><div class="sec-title">Expériences sportives</div><div class="sec-line"></div></div>
-    <div class="sport-grid">
-      <div class="sport-card"><img class="sport-card-img" src="1763927787345.jpg.jpeg" alt="Arbitrage"><div class="sport-card-body"><div class="sport-card-eyebrow">Depuis 2022</div><div class="sport-card-title">Arbitre Régional</div><div class="sport-card-sub">Ligue Marrakech-Safi · FRMF</div><div class="sport-card-desc">Direction de matchs de niveau régional avec rigueur et impartialité.</div></div></div>
-      <div class="sport-card"><img class="sport-card-img" src="IMG_20250506_192831_314.webp" alt="Athlétisme"><div class="sport-card-body"><div class="sport-card-eyebrow">Depuis 2022</div><div class="sport-card-title">Athlète — Athlétisme</div><div class="sport-card-sub">Kawkab Athlétique Club de Marrakech (KACM)</div><div class="sport-card-desc">Compétitions régionales et nationales. Entraînement intensif, endurance et dépassement de soi.</div></div></div>
-    </div>
-  </div>
-</section>
-<section class="section" id="skills">
-  <div class="wrap">
-    <div class="sec-header"><div class="sec-num">04</div><div class="sec-title">Compétences</div><div class="sec-line"></div></div>
-    <div class="skills-grid">
-      <div><div class="skill-group-title">Hard skills</div>
-        <div class="skill-row"><div class="skill-top"><span class="skill-name">C</span><span class="skill-pct">En apprentissage</span></div><div class="skill-track"><div class="skill-fill" style="width:65%"></div></div></div>
-        <div class="skill-row"><div class="skill-top"><span class="skill-name">Python</span><span class="skill-pct">Notions</span></div><div class="skill-track"><div class="skill-fill" style="width:55%"></div></div></div>
-        <div class="skill-row"><div class="skill-top"><span class="skill-name">Git / Linux</span><span class="skill-pct">Notions</span></div><div class="skill-track"><div class="skill-fill" style="width:45%"></div></div></div>
-        <div class="skill-row"><div class="skill-top"><span class="skill-name">HTML / CSS</span><span class="skill-pct">Maîtrise partielle</span></div><div class="skill-track"><div class="skill-fill" style="width:75%"></div></div></div>
-        <div class="skill-row"><div class="skill-top"><span class="skill-name">VS Code</span><span class="skill-pct">Maîtrise</span></div><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div></div>
+      <div class="fitem">
+        <div class="fitem-num">01</div>
+        <div>
+          <div class="fitem-title">1ère année Informatique Appliquée (IAP)</div>
+          <div class="fitem-sub">Faculté des Sciences Semlalia · Université Cadi Ayyad, Marrakech</div>
+          <div class="fitem-tags">
+            <span class="ftag">HTML</span>
+            <span class="ftag">CSS</span>
+            <span class="ftag">JAVASCRIPT</span>
+            <span class="ftag">Algorithmique</span>
+            <span class="ftag">C / Python</span>
+            <span class="ftag">Mathématiques</span>
+            <span class="ftag">Architecture des ordinateurs</span>
+          </div>
+        </div>
+        <div class="fitem-date">2025 – Présent</div>
       </div>
-      <div><div class="skill-group-title">Soft skills</div><div class="soft-cards">
-        <div class="soft-card"><div class="soft-card-dot"></div><div class="soft-card-title">Décision sous pression</div><div class="soft-card-desc">Forgée lors de matchs régionaux.</div></div>
-        <div class="soft-card"><div class="soft-card-dot"></div><div class="soft-card-title">Gestion du temps</div><div class="soft-card-desc">Études + entraînements + arbitrage.</div></div>
-        <div class="soft-card"><div class="soft-card-dot"></div><div class="soft-card-title">Discipline</div><div class="soft-card-desc">Années d'athlétisme intensif.</div></div>
-        <div class="soft-card"><div class="soft-card-dot"></div><div class="soft-card-title">Leadership</div><div class="soft-card-desc">Gestion des conflits, communication claire.</div></div>
-      </div></div>
+      <div class="fitem">
+        <div class="fitem-num">02</div>
+        <div>
+          <div class="fitem-title">Baccalauréat Sc.Physique</div>
+          <div class="fitem-sub">Lycée Qualifiant Prince Heritier My El Hassan, Marrakech</div>
+        </div>
+        <div class="fitem-date">2025</div>
+      </div>
+      <div class="fitem">
+        <div class="fitem-num">03</div>
+        <div>
+          <div class="fitem-title">Diplome D'arbitrage</div>
+          <div class="fitem-sub">Ligue Regional Du Football Marrakech-Safi</div>
+        </div>
+        <div class="fitem-date">2022-2023</div>
+      </div>
     </div>
   </div>
 </section>
-<section class="section" id="projets">
+<section class="section" style="padding-top:0" id="sport">
   <div class="wrap">
-    <div class="sec-header"><div class="sec-num">05</div><div class="sec-title">Projets</div><div class="sec-line"></div></div>
-    <div class="projets-grid">
-      <div class="sport-card"><div class="sport-card-body"><div class="sport-card-eyebrow">2025 · C</div><div class="sport-card-title">Application console en C</div><div class="sport-card-desc">Programme de gestion de notes appliquant algorithmique.</div><div class="fitem-tags" style="margin-top:0.8rem"><span class="ftag">C</span><span class="ftag">Algorithmique</span></div></div></div>
-      <div class="sport-card"><div class="sport-card-body"><div class="sport-card-eyebrow">2025 · PORTFOLIO</div><div class="sport-card-title">Portfolio HTML & CSS</div><div class="sport-card-desc">Portfolio personnel responsive, design moderne.</div><div class="fitem-tags"><span class="ftag">HTML</span><span class="ftag">CSS</span></div></div></div>
+    <div class="sec-header">
+      <div class="sec-num">03</div>
+      <div class="sec-title">Expériences sportives</div>
+      <div class="sec-line"></div>
+    </div>
+    <div class="sport-grid">
+      <div class="sport-card">
+        <img class="sport-card-img" src="1763927787345.jpg.jpeg" alt="Arbitrage FRMF">
+        <div class="sport-card-body">
+          <div class="sport-card-eyebrow">Depuis 2022</div>
+          <div class="sport-card-title">Arbitre Régional</div>
+          <div class="sport-card-sub">Ligue Marrakech-Safi · FRMF</div>
+          <div class="sport-card-desc">Direction de matchs de niveau régional avec rigueur et impartialité. Application stricte des règlements et gestion des acteurs sur le terrain.</div>
+        </div>
+      </div>
+      <div class="sport-card">
+        <img class="sport-card-img" src="IMG_20250506_192831_314.webp" alt="Athletisme KACM">
+         <div class="sport-card-body">
+          <div class="sport-card-eyebrow">Depuis 2022</div>
+          <div class="sport-card-title">Athlète — Athlétisme</div>
+          <div class="sport-card-sub">Kawkab Athlétique Club de Marrakech (KACM)</div>
+          <div class="sport-card-desc">Compétitions régionales et nationales. Entraînement intensif hebdomadaire, développement de l'endurance et dépassement de soi.</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-<section class="section" id="engagement">
+<section class="section" style="padding-top:0" id="skills">
   <div class="wrap">
-    <div class="sec-header"><div class="sec-num">06</div><div class="sec-title">Engagement éducatif & associatif</div><div class="sec-line"></div></div>
+    <div class="sec-header">
+      <div class="sec-num">04</div>
+      <div class="sec-title">Compétences</div>
+      <div class="sec-line"></div>
+    </div>
+    <div class="skills-grid">
+      <div>
+        <div class="skill-group-title">Hard skills</div>
+        <div class="skill-row">
+          <div class="skill-top"><span class="skill-name">C</span><span class="skill-pct">En apprentissage</span></div>
+          <div class="skill-track"><div class="skill-fill" style="width:65%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><span class="skill-name">Python</span><span class="skill-pct">Notions</span></div>
+          <div class="skill-track"><div class="skill-fill" style="width:55%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><span class="skill-name">Git / Linux</span><span class="skill-pct">Notions</span></div>
+          <div class="skill-track"><div class="skill-fill" style="width:45%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><span class="skill-name">HTML / CSS</span><span class="skill-pct">Maîtrise partielle</span></div>
+          <div class="skill-track"><div class="skill-fill" style="width:75%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><span class="skill-name">VS Code</span><span class="skill-pct">Maîtrise</span></div>
+          <div class="skill-track"><div class="skill-fill" style="width:80%"></div></div>
+        </div>
+      </div>
+      <div>
+        <div class="skill-group-title">Soft skills</div>
+        <div class="soft-cards">
+          <div class="soft-card">
+            <div class="soft-card-dot"></div>
+            <div class="soft-card-title">Décision sous pression</div>
+            <div class="soft-card-desc">Forgée lors de matchs régionaux en tant qu'arbitre.</div>
+          </div>
+          <div class="soft-card">
+            <div class="soft-card-dot"></div>
+            <div class="soft-card-title">Gestion du temps</div>
+            <div class="soft-card-desc">Études + entraînements + arbitrage en simultané.</div>
+          </div>
+          <div class="soft-card">
+            <div class="soft-card-dot"></div>
+            <div class="soft-card-title">Discipline</div>
+            <div class="soft-card-desc">Acquise grâce à des années d'athlétisme intensif.</div>
+          </div>
+          <div class="soft-card">
+            <div class="soft-card-dot"></div>
+            <div class="soft-card-title">Leadership</div>
+            <div class="soft-card-desc">Gestion des conflits, communication claire sur le terrain.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" style="padding-top:0" id="projets">
+  <div class="wrap">
+    <div class="sec-header">
+      <div class="sec-num">05</div>
+      <div class="sec-title">Projets</div>
+      <div class="sec-line"></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px">
+      <div class="sport-card" style="height:auto">
+        <div class="sport-card-body" style="padding:1.8rem">
+          <div class="sport-card-eyebrow">2025 · C</div>
+          <div class="sport-card-title">Application console en C</div>
+          <div class="sport-card-desc" style="margin-top:.5rem">Programme de gestion de notes appliquant les concepts d'algorithmique de base vus en TP.</div>
+          <div class="fitem-tags" style="margin-top:1rem">
+            <span class="ftag">C</span><span class="ftag">Algorithmique</span><span class="ftag">Structures de données</span>
+          </div>
+        </div>
+      </div>
+      <div class="sport-card" style="height:auto">
+        <div class="sport-card-body" style="padding:1.8rem">
+          <div class="sport-card-eyebrow">2025 · PORTFOLIO</div>
+          <div class="sport-card-title">Portfolio HTML &amp; CSS</div>
+          <div class="sport-card-desc" style="margin-top:.5rem">Portfolio personnel réalisé en HTML et CSS, appliquant les concepts vus en TP.</div>
+          <div class="fitem-tags" style="margin-top:1rem">
+            <span class="ftag">HTML</span><span class="ftag">CSS</span>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+<section class="section" style="padding-top:0" id="engagement">
+  <div class="wrap">
+    <div class="sec-header">
+      <div class="sec-num">06</div>
+      <div class="sec-title">Engagement éducatif &amp; associatif</div>
+      <div class="sec-line"></div>
+    </div>
     <div class="engage-grid">
-      <div class="engage-item"><img class="engage-photo" src="IMG-20260215-WA0349.jpg" alt="Association"><div class="engage-tag">Bénévolat associatif</div><div class="engage-title">Membre actif — Associations Arij</div><div class="engage-sub">Éducation et Développement Social</div><div class="engage-desc">Organisation d'événements éducatifs et culturels, sensibilisation jeunesse.</div><div class="engage-date">2026</div></div>
-      <div class="engage-item"><img class="engage-photo" src="20250818_191057(1).jpg" alt="Encadrement"><div class="engage-tag">Encadrement associatif</div><div class="engage-title">Formateur & Mentor — éducatif</div><div class="engage-sub">Region Marrakech-Safi</div><div class="engage-desc">Animation de groupes, transmission des valeurs de vivre-ensemble.</div><div class="engage-date">2025</div></div>
-      <div class="engage-item"><img class="engage-photo" src="IMG_20250327_172620_138.webp" alt="Tajwid"><div class="engage-tag">ÉVÉNEMENT CULTUREL</div><div class="engage-title">Comité d'organisation — Tajwid</div><div class="engage-sub">ACEECDS Marrakech</div><div class="engage-desc">Coordination logistique du concours de Tajwid, accueil participants.</div><div class="engage-date">2024</div></div>
+      <div class="engage-item">
+        <img class="sport-card-img" src="IMG-20260215-WA0349.jpg" alt="Association arij">
+        <div class="sport-card-body"></div>
+        <div class="engage-tag">Bénévolat associatif</div>
+        <div class="engage-title">Membre actif — Associations Arij pour l’Éducation et le Camping</div>
+        <div class="engage-sub">Association des Innovations pour l'Éducation et le Développement Social et le Camping · Tamensourt</div>
+        <div class="engage-desc">
+          Participation active à l'organisation d'événements éducatifs et culturels.
+          Contribution à des actions de sensibilisation jeunesse et au développement
+          des compétences sociales dans la communauté locale.
+        </div>
+        <div class="engage-date">2026</div>
+      </div>
+      <div class="engage-item">
+        <img class="sport-card-img" src="20250818_191057(1).jpg" alt="encadrement">
+        <div class="sport-card-body"></div>
+        <div class="engage-tag">Encadrement associatif</div>
+        <div class="engage-title">Formateur &amp; Mentor — educatif</div>
+        <div class="engage-sub">Region Marrakech-Safi</div>
+        <div class="engage-desc">
+        Encadrement et animation de groupes d'enfants lors de sorties et colonies de vacances. 
+        Transmission des valeurs de vivre-ensemble, de solidarité et de citoyenneté dans un cadre ludique et éducatif.
+        </div>
+        <div class="engage-date">2025</div>
+      </div>
+      <div class="engage-item">
+        <img class="sport-card-img" src="IMG_20250327_172620_138.webp" alt="encadrement">
+        <div class="sport-card-body"></div>
+        <div class="engage-tag">ÉVÉNEMENT CULTUREL & RELIGIEUX</div>
+        <div class="engage-title">Comité d'organisation — Événement de Tajwid</div>
+        <div class="engage-sub">ACEECDS - Marrakech-Tamensourt</div>
+        <div class="engage-desc">
+          Planification et coordination logistique du concours de Tajwid.
+          Accueil des participants et du jury, et encadrement global pour assurer le bon déroulement de cet événement spirituel et culturel.
+        </div>
+        <div class="engage-date">2024</div>
+      </div>
     </div>
-    <div class="quote-block"><div class="quote-text">"Le terrain m'a appris ce que les livres ne peuvent pas enseigner — décider en une seconde, assumer, et recommencer."</div><div class="quote-sub">— Ce que l'arbitrage et l'athlétisme ont apporté à ma façon de penser en informatique</div></div>
+    <div class="quote-block">
+      <div class="quote-text">"Le terrain m'a appris ce que les livres ne peuvent pas enseigner — décider en une seconde, assumer, et recommencer."</div>
+      <div class="quote-sub">— Ce que l'arbitrage et l'athlétisme ont apporté à ma façon de penser en informatique</div>
+    </div>
   </div>
 </section>
-<section class="section gallery-section">
+<section class="section" style="padding-top:0">
   <div class="wrap">
-    <div class="sec-header"><div class="sec-num">07</div><div class="sec-title">Galerie</div><div class="sec-line"></div></div>
+    <div class="sec-header">
+      <div class="sec-num">07</div>
+      <div class="sec-title">Galerie</div>
+      <div class="sec-line"></div>
+    </div>
     <div class="gallery">
-      <div class="gimg tall"><div class="gimg-inner"><img src="portrait.webp" alt="portrait"></div></div>
-      <div class="gimg"><div class="gimg-inner"><img src="IMG_20250327_172620_138.webp" alt="event"></div></div>
-      <div class="gimg wide"><div class="gimg-inner"><img src="1763927787345.jpg.jpeg" alt="arbitrage"></div></div>
-      <div class="gimg"><div class="gimg-inner"><img src="IMG_20250506_192831_314.webp" alt="athletisme"></div></div>
-      <div class="gimg wide"><div class="gimg-inner"><img src="IMG-20260215-WA0349.jpg" alt="association"></div></div>
+      <div class="gimg tall">
+        <div class="gimg-inner" style="height:446px">
+          <img class="sport-card-img" src="portrait.webp" alt="encadrement">
+        </div>
+      </div>
+      <div class="gimg">
+        <div class="gimg-inner">
+          <img class="sport-card-img" src="IMG_20250327_172620_138.webp" alt="encadrement">
+        </div>
+      </div>
+      <div class="gimg wide">
+        <div class="gimg-inner" style="height:220px">
+          <img class="sport-card-img" src="1763927787345.jpg.jpeg" alt="encadrement">
+        </div>
+      </div>
+      <div class="gimg">
+        <div class="gimg-inner">
+          <img class="sport-card-img" src="IMG_20250506_192831_314.webp" alt="encadrement">
+        </div>
+      </div>
+      <div class="gimg wide">
+        <div class="gimg-inner" style="height:220px">
+          <img class="sport-card-img" src="IMG-20260215-WA0349.jpg" alt="encadrement">
+        </div>
+      </div>
     </div>
   </div>
 </section>
-<section class="section lang-section">
+<section class="section" style="padding-top:0">
   <div class="wrap">
-    <div class="sec-header"><div class="sec-num">08</div><div class="sec-title">Langues</div><div class="sec-line"></div></div>
-    <div class="lang-container">
-      <div class="lang-row"><div class="lang-name">Arabe</div><div class="lang-bar-wrap"><div class="lang-bar" style="width:100%"></div></div><div class="lang-level">Maternelle</div></div>
-      <div class="lang-row"><div class="lang-name">Français</div><div class="lang-bar-wrap"><div class="lang-bar" style="width:85%"></div></div><div class="lang-level">Courant</div></div>
-      <div class="lang-row"><div class="lang-name">Anglais</div><div class="lang-bar-wrap"><div class="lang-bar" style="width:55%"></div></div><div class="lang-level">Intermédiaire</div></div>
+    <div class="sec-header">
+      <div class="sec-num">08</div>
+      <div class="sec-title">Langues</div>
+      <div class="sec-line"></div>
+    </div>
+    <div style="max-width:600px">
+      <div class="lang-row">
+        <div class="lang-name">Arabe</div>
+        <div class="lang-bar-wrap"><div class="lang-bar" style="width:100%"></div></div>
+        <div class="lang-level">Maternelle</div>
+      </div>
+      <div class="lang-row">
+        <div class="lang-name">Français</div>
+        <div class="lang-bar-wrap"><div class="lang-bar" style="width:85%"></div></div>
+        <div class="lang-level">Courant</div>
+      </div>
+      <div class="lang-row">
+        <div class="lang-name">Anglais</div>
+        <div class="lang-bar-wrap"><div class="lang-bar" style="width:55%"></div></div>
+        <div class="lang-level">Intermédiaire</div>
+      </div>
     </div>
   </div>
 </section>
 <div class="contact-bar" id="contact">
-  <div class="contact-bar-title">Travaillons Ensemble</div>
+  <div class="contact-bar-title">Travaillons ensemble</div>
   <div class="contact-pills">
     <a href="mailto:m.fatoiki1391@gmail.com" class="cpill">m.fatoiki1391@gmail.com</a>
     <a href="https://wa.me/212770451481" class="cpill">+212 770-451481</a>
@@ -142,5 +371,35 @@
 <footer>
   MOHAMED RIYAD FATOIKI · Portfolio 2026 &copy;
 </footer>
+<script>
+if(window.matchMedia('(pointer:fine)').matches){
+  const cur=document.getElementById('cur');
+  const ring=document.getElementById('ring');
+  let mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px'});
+  function animRing(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(animRing)}
+  animRing();
+  document.querySelectorAll('a,button,.sport-card,.fitem').forEach(el=>{
+    el.addEventListener('mouseenter',()=>{ring.style.transform='translate(-50%,-50%) scale(1.8)';ring.style.borderColor='rgba(232,196,90,.8)'});
+    el.addEventListener('mouseleave',()=>{ring.style.transform='translate(-50%,-50%) scale(1)';ring.style.borderColor='rgba(232,196,90,.5)'});
+  });
+}else{
+  document.getElementById('cur').style.display='none';
+  document.getElementById('ring').style.display='none';
+}
+const observer=new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+},{threshold:0.12});
+
+document.querySelectorAll('.sec-header,.fitem,.sport-card,.engage-item,.soft-card,.skill-row,.lang-row,.about-grid,.gimg,.quote-block').forEach(el=>{
+  el.classList.add('scroll-fade');
+  observer.observe(el);
+});
+</script>
 </body>
 </html>

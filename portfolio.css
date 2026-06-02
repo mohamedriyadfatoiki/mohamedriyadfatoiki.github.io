@@ -21,6 +21,7 @@ body{
   overflow-x:hidden;
 }
 
+/* ── CURSOR ── */
 body{cursor:none}
 .cursor{
   position:fixed;width:10px;height:10px;
@@ -37,12 +38,14 @@ body{cursor:none}
   transition:all .18s ease;
 }
 
+/* ── NOISE OVERLAY ── */
 body::before{
   content:'';position:fixed;inset:0;
   background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.04'/%3E%3C/svg%3E");
   pointer-events:none;z-index:1000;opacity:.5;
 }
 
+/* ── HERO ── */
 .hero{
   min-height:100vh;
   display:grid;
@@ -111,6 +114,7 @@ body::before{
 }
 .btn-outline:hover{border-color:var(--accent);color:var(--accent)}
 
+/* ── HERO RIGHT (photo) ── */
 .hero-right{
   position:relative;
   overflow:hidden;
@@ -129,12 +133,14 @@ body::before{
              linear-gradient(to bottom, transparent 60%, var(--black) 100%);
 }
 
+/* Diagonal line decoration */
 .hero-line{
   position:absolute;bottom:0;left:0;right:0;height:3px;
   background:repeating-linear-gradient(90deg, var(--accent) 0, var(--accent) 40px, transparent 40px, transparent 60px);
   z-index:10;
 }
 
+/* ── STATS BAR ── */
 .stats-bar{
   display:grid;grid-template-columns:repeat(4,1fr);
   border-top:1px solid var(--border);
@@ -158,8 +164,10 @@ body::before{
   color:var(--muted);margin-top:.4rem;
 }
 
+/* ── WRAPPER ── */
 .wrap{max-width:1100px;margin:0 auto;padding:0 2rem}
 
+/* ── SECTION ── */
 .section{padding:6rem 0}
 
 .sec-header{
@@ -182,6 +190,7 @@ body::before{
 
 .sec-line{flex:1;height:1px;background:var(--border)}
 
+/* ── ABOUT ── */
 .about-grid{
   display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;
 }
@@ -222,6 +231,7 @@ body::before{
   color:var(--accent);
 }
 
+/* ── FORMATION ── */
 .formation-list{display:flex;flex-direction:column;gap:1px}
 
 .fitem{
@@ -266,6 +276,7 @@ body::before{
   border-radius:2px;
 }
 
+/* ── SPORT ── */
 .sport-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
 
 .sport-card{
@@ -296,6 +307,7 @@ body::before{
 .sport-card-sub{font-size:13px;color:var(--muted);font-style:italic;margin-bottom:.8rem}
 .sport-card-desc{font-size:13px;font-weight:300;line-height:1.65;color:rgba(240,237,230,.65)}
 
+/* ── SKILLS ── */
 .skills-grid{
   display:grid;grid-template-columns:1fr 1fr;gap:3rem;
 }
@@ -335,6 +347,7 @@ body::before{
   background:var(--accent);margin-bottom:.7rem;
 }
 
+/* ── GALLERY ── */
 .gallery{
   display:grid;
   grid-template-columns:repeat(4,1fr);
@@ -357,6 +370,7 @@ body::before{
 .gimg.tall .gimg-inner{height:100%}
 .gimg.wide .gimg-inner{height:220px}
 
+/* ── LANGUE ── */
 .lang-row{
   display:grid;grid-template-columns:180px 1fr auto;
   align-items:center;gap:1.5rem;
@@ -369,6 +383,7 @@ body::before{
 .lang-bar{height:100%;background:var(--accent);border-radius:100px}
 .lang-level{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 
+/* ── CONTACT BAR ── */
 .contact-bar{
   background:var(--accent);
   padding:3rem 0;
@@ -389,6 +404,7 @@ body::before{
 }
 .cpill:hover{background:var(--deep);color:var(--white)}
 
+/* ── FOOTER ── */
 footer{
   padding:2rem;text-align:center;
   font-size:11px;letter-spacing:.1em;text-transform:uppercase;
@@ -396,10 +412,12 @@ footer{
   border-top:1px solid var(--border);
 }
 
+/* ── ANIMATIONS ── */
 @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
 .fade-up{animation:fadeUp .7s ease both}
 .d1{animation-delay:.1s}.d2{animation-delay:.2s}.d3{animation-delay:.3s}.d4{animation-delay:.4s}.d5{animation-delay:.55s}
 
+/* ── RESPONSIVE ── */
 @media(max-width:900px){
   .hero{grid-template-columns:1fr}
   .hero-right{height:50vh}
@@ -423,6 +441,7 @@ footer{
   .fitem-date{width:fit-content;margin-bottom:.5rem}
 }
 
+/* ── ENGAGEMENT ── */
 .engage-grid{
   display:grid;
   grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
@@ -508,6 +527,7 @@ footer{
   font-size:12px;font-weight:300;
   color:var(--muted);font-style:italic;
 }
+/* ── SCROLL FADE ANIMATIONS (IntersectionObserver) ── */
 .scroll-fade{
   opacity:0;
   transform:translateY(22px);
@@ -518,6 +538,7 @@ footer{
   transform:translateY(0);
 }
 
+/* Stagger children inside sec-header */
 .sec-header.scroll-fade{transition-delay:.05s}
 .fitem.scroll-fade{transition-delay:.08s}
 .sport-card.scroll-fade{transition-delay:.1s}
@@ -527,11 +548,13 @@ footer{
 .lang-row.scroll-fade{transition-delay:.08s}
 .gimg.scroll-fade{transition-delay:.05s}
 
+/* ── TOUCH/MOBILE: hide custom cursor ── */
 @media(pointer:coarse){
   body{cursor:auto}
   .cursor,.cursor-ring{display:none}
 }
 
+/* ── SKILL LEVEL LABELS (replace % bars with accessible labels) ── */
 .skill-pct{
   font-size:10px;
   letter-spacing:.08em;

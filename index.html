@@ -8,10 +8,8 @@
 <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
-
 <div class="cursor" id="cur"></div>
 <div class="cursor-ring" id="ring"></div>
-
 <section class="hero">
   <div class="hero-left">
     <div class="hero-eyebrow fade-up d1">Marrakech · FSSM · KACM · LRMSF</div>
@@ -31,7 +29,6 @@
   </div>
   <div class="hero-line"></div>
 </section>
-
 <div class="stats-bar">
   <div class="stat">
     <div class="stat-num">4+</div>
@@ -50,7 +47,6 @@
     <div class="stat-label">Langues</div>
   </div>
 </div>
-
 <section class="section" id="about">
   <div class="wrap">
     <div class="sec-header">
@@ -87,7 +83,6 @@
     </div>
   </div>
 </section>
-
 <section class="section" style="padding-top:0" id="formation">
   <div class="wrap">
     <div class="sec-header">
@@ -132,7 +127,6 @@
     </div>
   </div>
 </section>
-
 <section class="section" style="padding-top:0" id="sport">
   <div class="wrap">
     <div class="sec-header">
@@ -162,7 +156,6 @@
     </div>
   </div>
 </section>
-
 <section class="section" style="padding-top:0" id="skills">
   <div class="wrap">
     <div class="sec-header">
@@ -222,7 +215,6 @@
     </div>
   </div>
 </section>
-
 <section class="section" style="padding-top:0" id="projets">
   <div class="wrap">
     <div class="sec-header">
@@ -253,7 +245,6 @@
       </div>
   </div>
 </section>
-
 <section class="section" style="padding-top:0" id="engagement">
   <div class="wrap">
     <div class="sec-header">
@@ -261,7 +252,6 @@
       <div class="sec-title">Engagement éducatif &amp; associatif</div>
       <div class="sec-line"></div>
     </div>
-<!---ha fen wssslna hhhhhhhhh-->
     <div class="engage-grid">
 
       <div class="engage-item">
@@ -277,7 +267,6 @@
         </div>
         <div class="engage-date">2026</div>
       </div>
-<!---ha fen wssslna hhhhhhhhh-->
       <div class="engage-item">
         <img class="sport-card-img" src="20250818_191057(1).jpg" alt="encadrement">
         <div class="sport-card-body"></div>
@@ -381,7 +370,7 @@
 
 
 <div class="contact-bar" id="contact">
-  <div class="contact-bar-title">Travaillons ensemble</div>
+  <div class="contact-bar-title">Travaillons Ensemble</div>
   <div class="contact-pills">
     <a href="mailto:m.fatoiki1391@gmail.com" class="cpill">m.fatoiki1391@gmail.com</a>
     <a href="https://wa.me/212770451481" class="cpill">+212 770-451481</a>
@@ -391,11 +380,10 @@
 </div>
 
 <footer>
-  MOHAMED RIYAD FATOIKI · Portfolio 2025 &copy;
+  MOHAMED RIYAD FATOIKI · Portfolio 2026 &copy;
 </footer>
 
 <script>
-// Custom cursor (desktop only)
 if(window.matchMedia('(pointer:fine)').matches){
   const cur=document.getElementById('cur');
   const ring=document.getElementById('ring');
@@ -408,12 +396,10 @@ if(window.matchMedia('(pointer:fine)').matches){
     el.addEventListener('mouseleave',()=>{ring.style.transform='translate(-50%,-50%) scale(1)';ring.style.borderColor='rgba(232,196,90,.5)'});
   });
 }else{
-  // On touch devices, hide custom cursor elements
   document.getElementById('cur').style.display='none';
   document.getElementById('ring').style.display='none';
 }
 
-// IntersectionObserver for scroll-triggered fade-up (sections after hero)
 const observer=new IntersectionObserver((entries)=>{
   entries.forEach(entry=>{
     if(entry.isIntersecting){
